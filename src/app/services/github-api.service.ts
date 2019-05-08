@@ -16,7 +16,7 @@ export class GithubAPIService
 
   getRepositories()
   {
-    return this.http.get<Repository>(this.url_repo);
+    return this.http.get<Repository[]>(this.url_repo);
   }
 
   getLicense(name: string)
