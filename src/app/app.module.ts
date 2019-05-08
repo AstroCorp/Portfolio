@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, IconsModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +28,7 @@ import { AboutComponent } from './components/about/about.component';
     AppRoutingModule,
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
+    IconsModule,
   ],
   providers: [GithubAPIService],
   bootstrap: [AppComponent]

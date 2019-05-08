@@ -1,7 +1,5 @@
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <app-repository *ngFor="let repository of repositories"></app-repository>
-    </div>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <app-repository class="col-11 col-sm-5 col-md-4 col-xl-3" *ngFor="let repository of repositories" [repository]="repository"></app-repository>
   </div>
 </div>

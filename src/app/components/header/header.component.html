@@ -1,3 +1,16 @@
-<p>
-  header works!
-</p>
+<mdb-navbar SideClass="navbar navbar-expand-lg special-color-dark mb-5" [containerInside]="false">
+  <mdb-navbar-brand><a class="navbar-brand font-weight-bold" href="#">Astro_Corp</a></mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Información</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
