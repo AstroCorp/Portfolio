@@ -1,0 +1,13 @@
+.repository {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 20px;
+
+    .custom-text {
+        display: block;
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
+    }
+}

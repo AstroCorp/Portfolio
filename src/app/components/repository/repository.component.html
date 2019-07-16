@@ -1,11 +1,11 @@
-<mdb-card>
-  <mdb-card-img src="./assets/images/{{repository.name}}.png"></mdb-card-img>
-  <mdb-card-body>
-    <mdb-card-title>
-      <h4>{{ repository.name }}</h4>
-    </mdb-card-title>
+<mdb-card class="repository">
+    <mdb-card-img src="./assets/images/{{repository.name}}.png"></mdb-card-img>
+    <mdb-card-body>
+        <mdb-card-title>
+            <h4>{{ repository.name | fixRepositoryName }}</h4>
+        </mdb-card-title>
 
-    <mdb-card-text>{{ repository.description }}</mdb-card-text>
-    <a mdbBtn color="primary" mdbWavesEffect>Ver Proyecto</a>
-  </mdb-card-body>
+        <mdb-card-text class="custom-text">{{ repository.description }}</mdb-card-text>
+        <a mdbBtn color="primary" mdbWavesEffect>Ver Proyecto</a>
+    </mdb-card-body>
 </mdb-card>

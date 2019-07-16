@@ -13,25 +13,28 @@ import { ListRepositoriesComponent } from './components/list-repositories/list-r
 import { RepositoryComponent } from './components/repository/repository.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AboutComponent } from './components/about/about.component';
+import { FixRepositoryNamePipe } from './pipes/fix-repository-name.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    ListRepositoriesComponent,
-    RepositoryComponent,
-    ErrorComponent,
-    AboutComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    MDBBootstrapModule.forRoot(),
-    FontAwesomeModule
-  ],
-  providers: [GithubAPIService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        FooterComponent,
+        HeaderComponent,
+        ListRepositoriesComponent,
+        RepositoryComponent,
+        ErrorComponent,
+        AboutComponent,
+        FixRepositoryNamePipe
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        MDBBootstrapModule.forRoot(),
+        FontAwesomeModule
+    ],
+    providers: [GithubAPIService],
+    bootstrap: [AppComponent]
 })
+
 export class AppModule { }
