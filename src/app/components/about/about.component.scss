@@ -1,9 +1,8 @@
-.info {
-    margin-top: 68px;
+.subtitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.subtitle {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-style: italic;
+.subtitle:last-child {
+    margin-bottom: 0;
 }
