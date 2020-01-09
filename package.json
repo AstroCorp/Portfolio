@@ -41,7 +41,7 @@
     "@angular-devkit/build-angular": "~0.803.21",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
-    "@types/node": "~13.1.4",
+    "@types/node": "~13.1.5",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.2.1",
