@@ -12,7 +12,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { ListRepositoriesComponent } from './components/list-repositories/list-repositories.component';
 import { RepositoryComponent } from './components/repository/repository.component';
 import { ErrorComponent } from './components/error/error.component';
-import { AboutComponent } from './components/about/about.component';
 import { FixRepositoryNamePipe } from './pipes/fix-repository-name.pipe';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { FixRepositoryNamePipe } from './pipes/fix-repository-name.pipe';
         ListRepositoriesComponent,
         RepositoryComponent,
         ErrorComponent,
-        AboutComponent,
         FixRepositoryNamePipe
     ],
     imports: [
