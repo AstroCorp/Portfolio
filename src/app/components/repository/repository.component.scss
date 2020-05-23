@@ -1,15 +1,18 @@
 .repository {
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    margin: 20px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 422.88px;
+  min-height: 422.88px;
+  max-height: 422.88px;
+  margin: 20px;
 
-    .custom-text {
-        display: block;
-        margin-top: 5px;
-        height: 115px;
-        min-height: 115px;
-        max-height: 115px;
-        text-align: justify;
-    }
+  .custom-text {
+    display: block;
+    margin-top: 5px;
+    height: 115px;
+    min-height: 115px;
+    max-height: 115px;
+    text-align: justify;
+  }
 }
