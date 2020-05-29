@@ -1,2 +1,19 @@
-## Mi Portfolio
-Portfolio desarrollado con Angular 9, usando la API de github para listar los proyectos.
+# portfolio
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,12 +1,19 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import Vue from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import App from './App.vue';
+import './assets/css/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookF, faTwitter, faGithub, faLinkedinIn, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+Vue.config.productionTip = false;
+Vue.use(VueAxios, axios);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-if (environment.production) {
-  enableProdMode();
-}
+library.add(faFacebookF, faTwitter, faGithub, faLinkedinIn, faTwitch, faYoutube, faExternalLinkAlt);
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
