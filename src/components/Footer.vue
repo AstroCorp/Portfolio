@@ -4,7 +4,7 @@
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div class="flex justify-center flex-row w-full">
-            <div v-for="link in links" class="rounded-full h-12 w-12 text-xl text-white flex items-center m-1" :style="{ 'background-color': link.color }">
+            <div v-for="(link, index) in links" :key="index" class="rounded-full h-12 w-12 text-xl text-white flex items-center m-1" :style="{ 'background-color': link.color }">
                 <font-awesome-icon class="flex-1" :icon="['fab', link.icon]" />
             </div>
         </div>

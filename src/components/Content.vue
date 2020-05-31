@@ -3,7 +3,7 @@
         <Header />
         
         <div class="flex my-4 justify-center flex-wrap">
-            <Card v-for="repository in repositories" :repository="repository" />
+            <Card v-for="(repository, index) in repositories" :key="index" :repository="repository" />
         </div>
 
         <Footer />
