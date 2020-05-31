@@ -1,6 +1,6 @@
 # Portfolio
 
-![Build status](https://api.travis-ci.com/AstroCorp/Portfolio.svg?branch=master)
+[![Build Status](https://travis-ci.com/AstroCorp/Portfolio.svg?branch=master)](https://travis-ci.com/AstroCorp/Portfolio)
 
 ## Instalar paquetes
 
