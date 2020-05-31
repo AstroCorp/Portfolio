@@ -1,19 +1,21 @@
-# portfolio
+# Portfolio
 
-## Project setup
+![Build status](https://api.travis-ci.com/AstroCorp/Portfolio.svg?branch=master)
+
+## Instalar paquetes
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Iniciar servidor para desarrollar
+
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compilar para producción
+
 ```
 yarn build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
