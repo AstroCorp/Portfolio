@@ -8,7 +8,7 @@
                 <font-awesome-icon class="flex-1" :icon="['fab', link.icon]" />
             </div>
         </div>
-        <div class="w-full text-center title text-xl mt-4">© 2020 Copyright Alejandro Leal Bermúdez. Todos los derechos reservados.</div>
+        <div class="w-full text-center title text-xl mt-4">© {{ getYear }} Copyright Alejandro Leal Bermúdez. Todos los derechos reservados.</div>
     </footer>
 </template>
 
@@ -49,7 +49,11 @@ export default class Footer extends Vue
             color: '#DD4B39',
             url: 'https://www.youtube.com/c/AstroCorpESP',
         }
-    ]
+    ];
+
+    public get getYear(): number {
+        return new Date().getFullYear();
+    }
 }
 </script>
 
