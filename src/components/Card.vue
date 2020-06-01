@@ -27,5 +27,18 @@ export default class Card extends Vue
 </script>
 
 <style scoped lang="scss">
+.card {
+    height: 370px;
+    width:285px;
 
+    .open-btn {
+        background-color: #6617cb;
+        background-image: linear-gradient(315deg, #6617cb 0%, #d43a97 74%);
+        box-shadow: 0 0 0 0 #d43a97, 0.2rem 0.2rem 30px #6617cb;
+
+        &:hover {
+            box-shadow: 0 0 0 0 #d43a97, 0.2rem 0.2rem 60px #6617cb;
+        }
+    }
+}
 </style>

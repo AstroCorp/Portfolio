@@ -58,5 +58,12 @@ export default class Footer extends Vue
 </script>
 
 <style scoped lang="scss">
-
+.footer-icon {
+    height: 16px;
+    width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    max-height: 16px;
+    max-width: 16px;
+}
 </style>
