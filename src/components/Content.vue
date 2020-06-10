@@ -59,7 +59,8 @@ export default class Content extends Vue
     get searchRepositories()
     {
         return this.repositories.filter((repository: any) => {
-            return this.search.length === 0 || repository.name.includes(this.search) || repository.description.includes(this.search);
+            const search = this.search.toLowerCase();
+            return this.search.length === 0 || repository.name.toLowerCase().includes(search) || repository.description.toLowerCase().includes(search);
         });
     }
 
