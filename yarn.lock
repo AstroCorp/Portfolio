@@ -827,10 +827,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@fortawesome/fontawesome-common-types@^0.2.28":
-  version "0.2.28"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.28.tgz#1091bdfe63b3f139441e9cba27aa022bff97d8b2"
-  integrity sha512-gtis2/5yLdfI6n0ia0jH7NJs5i/Z/8M/ZbQL6jXQhCthEOe5Cr5NcQPhgTvFxNOtURE03/ZqUcEskdn2M+QaBg==
+"@fortawesome/fontawesome-common-types@^0.2.28", "@fortawesome/fontawesome-common-types@^0.2.29":
+  version "0.2.29"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.29.tgz#e1a456b643237462d390304cab6975ff3fd68397"
+  integrity sha512-cY+QfDTbZ7XVxzx7jxbC98Oxr/zc7R2QpTLqTxqlfyXDrAJjzi/xUIqAUsygELB62JIrbsWxtSRhayKFkGI7MA==
 
 "@fortawesome/fontawesome-svg-core@^1.2.28":
   version "1.2.28"
@@ -846,12 +846,12 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.28"
 
-"@fortawesome/free-solid-svg-icons@^5.13.0":
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.13.0.tgz#44d9118668ad96b4fd5c9434a43efc5903525739"
-  integrity sha512-IHUgDJdomv6YtG4p3zl1B5wWf9ffinHIvebqQOmV3U+3SLw4fC+LUCCgwfETkbTtjy5/Qws2VoVf6z/ETQpFpg==
+"@fortawesome/free-solid-svg-icons@^5.13.1":
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.13.1.tgz#010a846b718a0f110b3cd137d072639b4e8bd41a"
+  integrity sha512-LQH/0L1p4+rqtoSHa9qFYR84hpuRZKqaQ41cfBQx8b68p21zoWSekTAeA54I/2x9VlCHDLFlG74Nmdg4iTPQOg==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.28"
+    "@fortawesome/fontawesome-common-types" "^0.2.29"
 
 "@fortawesome/vue-fontawesome@^0.1.10":
   version "0.1.10"
@@ -8614,10 +8614,10 @@ vue-paginate@^3.6.0:
   dependencies:
     vue "2.3.3"
 
-vue-property-decorator@^8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.5.0.tgz#9af64c5301413f4732640cc0d046879417e64994"
-  integrity sha512-0RueJN/shPWf5gM8GLUD6bYiXr+q7bu+S1tgr7XwgBSng10H5DLQjVYfJ5XHAOPFo7fBfY1nxljBQ95qryAiWg==
+vue-property-decorator@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.0.0.tgz#0a5f6d47d33ca62a8876108ccfa65c2c4fb7325a"
+  integrity sha512-oegTNPItuHOkW0AP1MnbdNwkmyhfsUIIXvIRHpgC18tVoEo21/i6kItyeekjMs8JgZJeuHzsaTc/DZaJFH4IWQ==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
