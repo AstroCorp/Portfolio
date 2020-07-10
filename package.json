@@ -23,7 +23,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@fullhuman/vue-cli-plugin-purgecss": "~2.2.0",
-    "@vue/cli-service": "~4.4.4",
+    "@vue/cli-service": "~4.4.6",
     "@vue/cli-plugin-babel": "~4.4.6",
     "@vue/cli-plugin-typescript": "~4.4.4",
     "node-sass": "^4.12.0",
