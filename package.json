@@ -10,7 +10,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/vue-fontawesome": "^0.1.10",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "tailwindcss": "^1.5.1",
