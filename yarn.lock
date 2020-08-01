@@ -827,7 +827,7 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@fortawesome/fontawesome-common-types@^0.2.29", "@fortawesome/fontawesome-common-types@^0.2.30":
+"@fortawesome/fontawesome-common-types@^0.2.30":
   version "0.2.30"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.30.tgz#2f1cc5b46bd76723be41d0013a8450c9ba92b777"
   integrity sha512-TsRwpTuKwFNiPhk1UfKgw7zNPeV5RhNp2Uw3pws+9gDAkPGKrtjR1y2lI3SYn7+YzyfuNknflpBA1LRKjt7hMg==
@@ -8567,10 +8567,10 @@ vue-axios@^2.1.5:
   resolved "https://registry.yarnpkg.com/vue-axios/-/vue-axios-2.1.5.tgz#1af4bf1218ed71309c76afb38d0f683e312c24a7"
   integrity sha512-th5xVbInVoyIoe+qY+9GCflEVezxAvztD4xpFF39SRQYqpoKD2qkmX8yv08jJG9a2SgNOCjirjJGSwg/wTrbmA==
 
-vue-class-component@^7.2.4:
-  version "7.2.4"
-  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.2.4.tgz#5c15cef356d7ce793aefef3b23cb5ac0df7ff62d"
-  integrity sha512-3LMd3yITe6wcHJ5Lyz85MSsNJrUUWeIBKnGO/YUV1ZwH2i4YmrE7t8T8eRLG45aqMlgi/BRFRyfNh3Us7k/v5Q==
+vue-class-component@^7.2.5:
+  version "7.2.5"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.2.5.tgz#212b3548c4fdd3314774c4adbc1c3792a40b52d0"
+  integrity sha512-0CSftHY0bDTD+4FbYkuFf6+iKDjZ4h2in2YYJDRMk5daZIjrgT9LjFHvP7Rzqy9/s1pij3zDtTSLRUjsPWMwqg==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
