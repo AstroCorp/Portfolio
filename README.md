@@ -8,6 +8,12 @@
 yarn install
 ```
 
+## Limpiar y reinstalar paquetes
+
+```
+yarn clean
+```
+
 ### Iniciar servidor para desarrollar
 
 ```
