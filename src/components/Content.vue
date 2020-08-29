@@ -1,36 +1,47 @@
 <template>
-    <div class="flex flex-col min-h-screen">
-        <Header @search="search = $event" />
+    <div class="flex flex-row">
+        <Header :showGoToTopButton="showGoToTopButton" />
         
-        <div class="mt-2 mb-4 flex-grow" :key="search.length">
-            <paginate
-                name="repositories"
-                class="flex justify-center flex-wrap"
-                :list="searchRepositories"
-                :per="10"
-            >
-                <Card v-for="(repository, index) in paginated('repositories')" :key="index" :repository="repository" />
-            </paginate>
+        <main class="overflow-y-auto h-screen w-full" @scroll="scroll">
+            <div id="top"></div>
 
-            <paginate-links
-                class="flex justify-center mt-4"
-                for="repositories"
-                :show-step-links="true"
-                :hide-single-page="true"
-                :limit="4"
-                :step-links="{
-                    next: '❯',
-                    prev: '❮',
-                }"
+            <input 
+                class="mx-auto mt-2 mb-6 block h-10 w-5/6 sm:w-1/2 xl:w-1/3 bg-gray-400 bg-opacity-50 placeholder-gray-900 outline-none text-center"
+                type="text"
+                placeholder="Buscar repositorios..."
+                v-model="search"
             />
-        </div>
 
-        <Footer />
+            <div>
+                <paginate
+                    name="repositories"
+                    class="flex justify-center flex-wrap"
+                    :list="searchRepositories"
+                    :per="10"
+                >
+                    <Card v-for="(repository, index) in paginated('repositories')" :key="index" :repository="repository" />
+                </paginate>
+
+                <paginate-links
+                    class="flex justify-center mt-4"
+                    for="repositories"
+                    :show-step-links="true"
+                    :hide-single-page="true"
+                    :limit="4"
+                    :step-links="{
+                        next: '❯',
+                        prev: '❮',
+                    }"
+                />
+            </div>
+
+            <Footer />
+        </main>
     </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Watch } from 'vue-property-decorator';
 import Header from './Header.vue';
 import Footer from './Footer.vue';
 import Card from './Card.vue';
@@ -40,16 +51,10 @@ import Card from './Card.vue';
 })
 export default class Content extends Vue
 {
-    public search: string = '';
+    private search: string = '';
     private repositories: [] = [];
     private paginate: string[] = ['repositories'];
-
-    components()
-    {
-        return {
-            Header
-        };
-    }
+    private showGoToTopButton: boolean = false;
 
     mounted()
     {
@@ -60,7 +65,10 @@ export default class Content extends Vue
     {
         return this.repositories.filter((repository: any) => {
             const search = this.search.toLowerCase();
-            return this.search.length === 0 || repository.name.toLowerCase().includes(search) || repository.description.toLowerCase().includes(search);
+
+            return this.search.length === 0 || 
+                repository.name.toLowerCase().includes(search) || 
+                repository.description.toLowerCase().includes(search);
         });
     }
 
@@ -72,10 +80,14 @@ export default class Content extends Vue
                     name: repo.name,
                     html_url: repo.html_url,
                     description: repo.description,
-                    tags_url: repo.tags_url,
                 }
             });
         });
+    }
+
+    scroll(ev: any)
+    {
+        this.showGoToTopButton = ev.target.scrollTop > 200;
     }
 }
 </script>
