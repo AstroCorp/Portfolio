@@ -2,7 +2,7 @@
     <header class="flex content-between flex-wrap h-screen w-10 mx-2 py-2">
         <div class="flex flex-col w-10">
             <a href="/" class="w-10 h-10">
-                <img src="./images/header/logo.png" alt="logo">
+                <img src="images/header/logo.png" alt="logo">
             </a>
         </div>
 
