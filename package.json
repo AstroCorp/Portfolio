@@ -16,7 +16,7 @@
     "core-js": "^3.7.0",
     "tailwindcss": "^1.9.6",
     "vue": "^2.6.12",
-    "vue-axios": "^2.1.4",
+    "vue-axios": "^3.2.4",
     "vue-class-component": "^7.2.6",
     "vue-paginate": "^3.6.0",
     "vue-property-decorator": "^9.0.2"
