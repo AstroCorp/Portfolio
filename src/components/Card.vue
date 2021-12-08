@@ -7,7 +7,7 @@ const props = defineProps<{ repository: Repository }>();
 <template>
   <div class="inline-block w-96 m-2 rounded-3xl overflow-hidden hover:shadow-2xl">
     <div class="relative">
-      <img :src="'/assets/images/' + repository.title.replaceAll(' ', '-') + '.png'" />
+      <img :src="'assets/images/' + repository.title.replaceAll(' ', '-') + '.png'" />
 
       <div class="absolute bottom-6 left-0 right-0 flex justify-center">
         <a
