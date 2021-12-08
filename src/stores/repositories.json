@@ -1,0 +1,56 @@
+{
+    "repositories": [
+        {
+            "title": "Ace Books",
+            "description": "Una web en la que podrás tener todos tus documentos organizados, comienza a leer desde tu PC y continúa en tu smartphone o tablet.",
+            "links": [
+                {
+                    "title": "Backend",
+                    "url": "https://github.com/AstroCorp/Ace-Books-Backend"
+                },
+                {
+                    "title": "Frontend",
+                    "url": "https://github.com/AstroCorp/Ace-Books-Frontend"
+                }
+            ]
+        },
+        {
+            "title": "Vivaldi Browser Mods",
+            "description": "Paquete que modifica el navegador Vivaldi, añadiendo mejoras en la interfaz.",
+            "links": [
+                {
+                    "title": "Repositorio",
+                    "url": "https://github.com/AstroCorp/Vivaldi-Browser-Mods"
+                }
+            ]
+        },
+        {
+            "title": "OBS Countdown",
+            "description": "Extensión para OBS que añade una cuenta atrás para las emisiones en directo.",
+            "links": [
+                {
+                    "title": "Repositorio",
+                    "url": "https://github.com/AstroCorp/OBS-Countdown"
+                }
+            ]
+        },
+        {
+            "title": "Project Base",
+            "description": "Repositorios base para comenzar mis proyectos usando react.",
+            "links": [
+                {
+                    "title": "React",
+                    "url": "https://github.com/AstroCorp/React-Base-App"
+                },
+                {
+                    "title": "React Native",
+                    "url": "https://github.com/AstroCorp/React-Native-Base-App"
+                },
+                {
+                    "title": "Electron",
+                    "url": "https://github.com/AstroCorp/Electron-React-Base-App"
+                }
+            ]
+        }
+    ]
+}

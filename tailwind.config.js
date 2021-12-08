@@ -4,12 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        custom: {
-          logo: '#445472',
-          bg: '#171616',
-          box: '#232323',
-          text: '#535353',
-        },
+        logo: '#445472',
       },
     },
   },

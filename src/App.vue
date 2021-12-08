@@ -1,28 +1,24 @@
-<template>
-  <div class="min-h-screen p-10 bg-custom-bg font-sans">
-    <div class="w-16 h-16 mx-auto mb-10 bg-custom-logo p-2 rounded-full">
-      <img class="rounded-full -mt-0.5" src="./images/header/logo.png" alt="logo">
-    </div>
+<script setup lang="ts">
+import { storeToRefs } from 'pinia';
+import useMainStore from './stores/main';
+import Card from './components/Card.vue';
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-      <a v-for="(project, index) in projects" :key="index" class="bg-custom-box m-2" :href="'https://github.com/AstroCorp/' + project.name" target="_blank">
-        <img class="w-full" :src="'./images/projects/' + project.name + '.png'" />
-        <div class="p-4 text-justify text-custom-text">
-          {{ project.description }}
-        </div>
-      </a>
+const main = useMainStore();
+const { repositories } = storeToRefs(main);
+</script>
+
+<template>
+  <div class="bg-gray-800 h-screen w-screen font-sans">
+    <div class="flex flex-col items-center">
+      <div class="pt-6 pb-8">
+        <a href="https://github.com/AstroCorp" target="_blank" class="bg-logo block h-20 w-20 rounded-full overflow-hidden p-2.5">
+          <img src="/assets/logo.png" alt="logo" class="-mt-0.5" />
+        </a>
+      </div>
+      
+      <div class="text-center">
+        <Card v-for="repo in repositories" :key="repo.title" :repository="repo" />
+      </div>
     </div>
   </div>
 </template>
-
-<script>
-import projects from './projects';
-
-export default {
-  data() {
-    return {
-      projects,
-    };
-  },
-}
-</script>
