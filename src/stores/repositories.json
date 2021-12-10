@@ -51,6 +51,16 @@
                     "url": "https://github.com/AstroCorp/Electron-React-Base-App"
                 }
             ]
+        },
+        {
+            "title": "Portfolio",
+            "description": "Web para listar todos mis proyectos, desarrollada con typescript y vue 3, alojada en github pages.",
+            "links": [
+                {
+                    "title": "Repositorio",
+                    "url": "https://github.com/AstroCorp/Portfolio"
+                }
+            ]
         }
     ]
 }
